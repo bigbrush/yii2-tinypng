@@ -1,0 +1,17 @@
+{
+    "name": "bigbrush/yii2-tinypng",
+    "type": "yii2-extension",
+    "description": "TinyPng for Yii 2",
+    "keywords": ["yii2", "image", "compression", "optimization"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "BIG Brush Agency ApS",
+            "email": "mj@bigbrush-agency.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "tinify/tinify": "^1.2"
+    }
+}
