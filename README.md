@@ -20,18 +20,37 @@ Or add this to your composer file
 ~~~
 
 Usage <span id="tiny-usage"></span>
+-----------------------------------
+**Image compression/optimizing**
 ~~~php
- $tiny = new TinyPng(['apiKey' => 'YOUR API KEY']);
- 
- // compress image - overwrite file
- $tiny->compress('path/to/file/to/compress');
- // compress image - create a new image
- $tiny->compress('path/to/file/to/compress', 'path/to/file/after/compression');
- 
- // resize image - overwrite file
- $tiny->resize('path/to/file/to/resize');
- // resize image - create a new image
- $tiny->resize('path/to/file/to/resize', 'path/to/file/after/resizing');
- ~~~
- 
- You can find more information at the [TinyPng docs](https://tinypng.com/developers/reference/php).
+$tiny = new TinyPng(['apiKey' => 'YOUR API KEY']);
+
+// compress image - overwrite file
+$tiny->compress('path/to/file/to/compress');
+// compress image - create a new image
+$tiny->compress('path/to/file/to/compress', 'path/to/file/after/compression');
+~~~
+
+**Image resizing**
+Image resizing requires a configuration array to be passed.
+~~~php
+[
+    'method' => 'fit',
+    'width' => 150,
+    'height' => 100,
+]
+~~~
+
+Available methods are:
+    - scale
+    - fit
+    - shrink
+
+See [TinyPng docs](https://tinypng.com/developers/reference/php) for information about each method.
+
+~~~php
+// resize image - overwrite file
+$tiny->resize('path/to/file/to/resize', null, ['method' => 'fit', 'width' => 150, 'height' => 100]);
+// resize image - create a new image
+$tiny->resize('path/to/file/to/resize', 'path/to/file/after/resizing', ['method' => 'fit', 'width' => 150, 'height' => 100]);
+~~~
