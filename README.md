@@ -32,6 +32,7 @@ $tiny->compress('path/to/file/to/compress', 'path/to/file/after/compression');
 ~~~
 
 **Image resizing**
+
 Image resizing requires a configuration array to be passed.
 ~~~php
 [
