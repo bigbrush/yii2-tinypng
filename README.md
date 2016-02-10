@@ -47,7 +47,7 @@ Available methods are:
     - fit
     - shrink
 
-See [TinyPng docs](https://tinypng.com/developers/reference/php) for information about each method.
+See [TinyPng docs](https://tinypng.com/developers/reference/php#resizing-and-compressing-images) for information about each method.
 
 ~~~php
 // resize image - overwrite file
