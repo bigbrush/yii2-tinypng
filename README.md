@@ -45,7 +45,7 @@ Image resizing requires a configuration array to be passed.
 Available methods are:
     - scale
     - fit
-    - shrink
+    - cover
 
 See [TinyPng docs](https://tinypng.com/developers/reference/php#resizing-and-compressing-images) for information about each method.
 
