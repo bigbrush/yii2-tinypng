@@ -118,4 +118,15 @@ class TinyPng extends Component
         $resized = $source->resize($options);
         $resized->toFile($dst);
     }
+
+    /**
+    * Gets the current number of compressions used this month 
+    *
+    * See [TinyPng docs](https://tinypng.com/developers/reference/php#compression-count) for more information.
+    */
+
+    public function usage()
+    {
+        return Tinify\compressionCount();
+    }
 }
