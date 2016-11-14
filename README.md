@@ -29,6 +29,8 @@ $tiny = new TinyPng(['apiKey' => 'YOUR API KEY']);
 $tiny->compress('path/to/file/to/compress');
 // compress image - create a new image
 $tiny->compress('path/to/file/to/compress', 'path/to/file/after/compression');
+// get current monthly compression count 
+$count = $tiny->usage();
 ~~~
 
 **Image resizing**
