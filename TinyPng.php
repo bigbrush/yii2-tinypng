@@ -107,7 +107,7 @@ class TinyPng extends Component
      * Available methods are:
      *     - scale
      *     - fit
-     *     - shrink
+     *     - cover
      *
      * See [TinyPng docs](https://tinypng.com/developers/reference/php) for information about each method.
      */
