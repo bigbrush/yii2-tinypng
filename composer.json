@@ -13,5 +13,10 @@
     "require": {
         "yiisoft/yii2": "*",
         "tinify/tinify": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "bigbrush\\tinypng\\": ""
+        }
     }
 }
